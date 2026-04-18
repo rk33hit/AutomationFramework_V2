@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 19 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" class="navigator-link">
+              <span class="suite-name border-failed">ParaBank Enterprise Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-ParaBank_Enterprise_Suite" class="navigator-link ">
+                    <span>C:\Users\91797\eclipse-workspace\AutomationFramework_V2\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-ParaBank_Enterprise_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-ParaBank_Enterprise_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-ParaBank_Enterprise_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-ParaBank_Enterprise_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-ParaBank_Enterprise_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-ParaBank_Enterprise_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods, 19 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" class="hide-methods failed suite-ParaBank_Enterprise_Suite"> (hide)</a> <!-- hide-methods failed suite-ParaBank_Enterprise_Suite -->
+                      <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" class="show-methods failed suite-ParaBank_Enterprise_Suite"> (show)</a> <!-- show-methods failed suite-ParaBank_Enterprise_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-ParaBank_Enterprise_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" title="com.banking.tests.LoginTest" class="method navigator-link" hash-for-method="verifyMultipleLogin(&lt;script&gt;alert(&#039;xss&#039;)&lt;/script&gt;, pass)">verifyMultipleLogin(<script>alert('xss')</script>, pass)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" title="com.banking.tests.LoginTest" class="method navigator-link" hash-for-method="verifyMultipleLogin(null, null)">verifyMultipleLogin(null, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" title="com.banking.tests.LoginTest" class="method navigator-link" hash-for-method="verifyMultipleLogin(john, DEMO)">verifyMultipleLogin(john, DEMO)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" title="com.banking.tests.LoginTest" class="method navigator-link" hash-for-method="verifyMultipleLogin(very_long_username_test_exceeding_standard_limits_999, short)">verifyMultipleLogin(very_long_username_test_exceeding_standard_limits_999, short)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" title="com.banking.tests.LoginTest" class="method navigator-link" hash-for-method="verifyMultipleLogin(user_name_with_spaces, pass word)">verifyMultipleLogin(user_name_with_spaces, pass word)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" title="com.banking.tests.LoginTest" class="method navigator-link" hash-for-method="verifyMultipleLogin(short, very_long_password_test_exceeding_standard_limits_999)">verifyMultipleLogin(short, very_long_password_test_exceeding_standard_limits_999)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" title="com.banking.tests.LoginTest" class="method navigator-link" hash-for-method="verifyMultipleLogin(rohit, qa_test_pass)">verifyMultipleLogin(rohit, qa_test_pass)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" title="com.banking.tests.LoginTest" class="method navigator-link" hash-for-method="verifyMultipleLogin(admin, admin123)">verifyMultipleLogin(admin, admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" title="com.banking.tests.LoginTest" class="method navigator-link" hash-for-method="verifyMultipleLogin(!@#$%^&amp;*(), special_pass)">verifyMultipleLogin(!@#$%^&*(), special_pass)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" title="com.banking.tests.LoginTest" class="method navigator-link" hash-for-method="verifyMultipleLogin( OR &#039;1&#039;=&#039;1, anything)">verifyMultipleLogin( OR '1'='1, anything)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" title="com.banking.tests.LoginTest" class="method navigator-link" hash-for-method="verifyMultipleLogin(alice, password)">verifyMultipleLogin(alice, password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" title="com.banking.tests.LoginTest" class="method navigator-link" hash-for-method="verifyMultipleLogin(null, null)">verifyMultipleLogin(null, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" title="com.banking.tests.LoginTest" class="method navigator-link" hash-for-method="verifyMultipleLogin(JOHN, demo)">verifyMultipleLogin(JOHN, demo)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" title="com.banking.tests.LoginTest" class="method navigator-link" hash-for-method="verifyMultipleLogin(null, null)">verifyMultipleLogin(null, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" title="com.banking.tests.LoginTest" class="method navigator-link" hash-for-method="verifyMultipleLogin(null, null)">verifyMultipleLogin(null, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" title="com.banking.tests.LoginTest" class="method navigator-link" hash-for-method="verifyMultipleLogin(null, null)">verifyMultipleLogin(null, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" title="com.banking.tests.LoginTest" class="method navigator-link" hash-for-method="verifyMultipleLogin(admin&#039; --, anything)">verifyMultipleLogin(admin' --, anything)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" title="com.banking.tests.LoginTest" class="method navigator-link" hash-for-method="verifyMultipleLogin(tcs_ghost_001, fakePass!)">verifyMultipleLogin(tcs_ghost_001, fakePass!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" title="com.banking.tests.LoginTest" class="method navigator-link" hash-for-method="verifyMultipleLogin(invalid_user_99, wrong_pass)">verifyMultipleLogin(invalid_user_99, wrong_pass)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ParaBank_Enterprise_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" class="hide-methods passed suite-ParaBank_Enterprise_Suite"> (hide)</a> <!-- hide-methods passed suite-ParaBank_Enterprise_Suite -->
+                      <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" class="show-methods passed suite-ParaBank_Enterprise_Suite"> (show)</a> <!-- show-methods passed suite-ParaBank_Enterprise_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-ParaBank_Enterprise_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParaBank_Enterprise_Suite" title="com.banking.tests.LoginTest" class="method navigator-link" hash-for-method="verifyMultipleLogin(john, demo)">verifyMultipleLogin(john, demo)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-ParaBank_Enterprise_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-ParaBank_Enterprise_Suite" class="panel ParaBank_Enterprise_Suite">
+          <div class="suite-ParaBank_Enterprise_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.banking.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleLogin(&lt;script&gt;alert(&#039;xss&#039;)&lt;/script&gt;, pass)">
+                  </a> <!-- verifyMultipleLogin(<script>alert('xss')</script>, pass) -->
+                  <span class="method-name">verifyMultipleLogin</span>
+                  <span class="parameters">(<script>alert('xss')</script>,pass)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login failed for user: &lt;script&gt;alert(&apos;xss&apos;)&lt;/script&gt; expected [true] but found [false]
+	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleLogin(null, null)">
+                  </a> <!-- verifyMultipleLogin(null, null) -->
+                  <span class="method-name">verifyMultipleLogin</span>
+                  <span class="parameters">(null,null)</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because &quot;parameters[0]&quot; is null
+	at com.banking.utils.TestListener.onTestStart(TestListener.java:36)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleLogin(john, DEMO)">
+                  </a> <!-- verifyMultipleLogin(john, DEMO) -->
+                  <span class="method-name">verifyMultipleLogin</span>
+                  <span class="parameters">(john,DEMO)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login failed for user: john expected [true] but found [false]
+	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleLogin(very_long_username_test_exceeding_standard_limits_999, short)">
+                  </a> <!-- verifyMultipleLogin(very_long_username_test_exceeding_standard_limits_999, short) -->
+                  <span class="method-name">verifyMultipleLogin</span>
+                  <span class="parameters">(very_long_username_test_exceeding_standard_limits_999,short)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login failed for user: very_long_username_test_exceeding_standard_limits_999 expected [true] but found [false]
+	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleLogin(user_name_with_spaces, pass word)">
+                  </a> <!-- verifyMultipleLogin(user_name_with_spaces, pass word) -->
+                  <span class="method-name">verifyMultipleLogin</span>
+                  <span class="parameters">(user_name_with_spaces,pass word)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login failed for user: user_name_with_spaces expected [true] but found [false]
+	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleLogin(short, very_long_password_test_exceeding_standard_limits_999)">
+                  </a> <!-- verifyMultipleLogin(short, very_long_password_test_exceeding_standard_limits_999) -->
+                  <span class="method-name">verifyMultipleLogin</span>
+                  <span class="parameters">(short,very_long_password_test_exceeding_standard_limits_999)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login failed for user: short expected [true] but found [false]
+	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleLogin(rohit, qa_test_pass)">
+                  </a> <!-- verifyMultipleLogin(rohit, qa_test_pass) -->
+                  <span class="method-name">verifyMultipleLogin</span>
+                  <span class="parameters">(rohit,qa_test_pass)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login failed for user: rohit expected [true] but found [false]
+	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleLogin(admin, admin123)">
+                  </a> <!-- verifyMultipleLogin(admin, admin123) -->
+                  <span class="method-name">verifyMultipleLogin</span>
+                  <span class="parameters">(admin,admin123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login failed for user: admin expected [true] but found [false]
+	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleLogin(!@#$%^&amp;*(), special_pass)">
+                  </a> <!-- verifyMultipleLogin(!@#$%^&*(), special_pass) -->
+                  <span class="method-name">verifyMultipleLogin</span>
+                  <span class="parameters">(!@#$%^&*(),special_pass)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login failed for user: !@#$%^&amp;*() expected [true] but found [false]
+	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleLogin( OR &#039;1&#039;=&#039;1, anything)">
+                  </a> <!-- verifyMultipleLogin( OR '1'='1, anything) -->
+                  <span class="method-name">verifyMultipleLogin</span>
+                  <span class="parameters">( OR '1'='1,anything)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login failed for user:  OR &apos;1&apos;=&apos;1 expected [true] but found [false]
+	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleLogin(alice, password)">
+                  </a> <!-- verifyMultipleLogin(alice, password) -->
+                  <span class="method-name">verifyMultipleLogin</span>
+                  <span class="parameters">(alice,password)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login failed for user: alice expected [true] but found [false]
+	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleLogin(null, null)">
+                  </a> <!-- verifyMultipleLogin(null, null) -->
+                  <span class="method-name">verifyMultipleLogin</span>
+                  <span class="parameters">(null,null)</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because &quot;parameters[0]&quot; is null
+	at com.banking.utils.TestListener.onTestStart(TestListener.java:36)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleLogin(JOHN, demo)">
+                  </a> <!-- verifyMultipleLogin(JOHN, demo) -->
+                  <span class="method-name">verifyMultipleLogin</span>
+                  <span class="parameters">(JOHN,demo)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login failed for user: JOHN expected [true] but found [false]
+	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleLogin(null, null)">
+                  </a> <!-- verifyMultipleLogin(null, null) -->
+                  <span class="method-name">verifyMultipleLogin</span>
+                  <span class="parameters">(null,null)</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because &quot;parameters[0]&quot; is null
+	at com.banking.utils.TestListener.onTestStart(TestListener.java:36)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleLogin(null, null)">
+                  </a> <!-- verifyMultipleLogin(null, null) -->
+                  <span class="method-name">verifyMultipleLogin</span>
+                  <span class="parameters">(null,null)</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because &quot;parameters[0]&quot; is null
+	at com.banking.utils.TestListener.onTestStart(TestListener.java:36)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleLogin(null, null)">
+                  </a> <!-- verifyMultipleLogin(null, null) -->
+                  <span class="method-name">verifyMultipleLogin</span>
+                  <span class="parameters">(null,null)</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because &quot;parameters[0]&quot; is null
+	at com.banking.utils.TestListener.onTestStart(TestListener.java:36)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleLogin(admin&#039; --, anything)">
+                  </a> <!-- verifyMultipleLogin(admin' -, anything) -->
+                  <span class="method-name">verifyMultipleLogin</span>
+                  <span class="parameters">(admin' --,anything)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login failed for user: admin&apos; -- expected [true] but found [false]
+	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleLogin(tcs_ghost_001, fakePass!)">
+                  </a> <!-- verifyMultipleLogin(tcs_ghost_001, fakePass!) -->
+                  <span class="method-name">verifyMultipleLogin</span>
+                  <span class="parameters">(tcs_ghost_001,fakePass!)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login failed for user: tcs_ghost_001 expected [true] but found [false]
+	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleLogin(invalid_user_99, wrong_pass)">
+                  </a> <!-- verifyMultipleLogin(invalid_user_99, wrong_pass) -->
+                  <span class="method-name">verifyMultipleLogin</span>
+                  <span class="parameters">(invalid_user_99,wrong_pass)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login failed for user: invalid_user_99 expected [true] but found [false]
+	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParaBank_Enterprise_Suite-class-failed -->
+          <div class="suite-ParaBank_Enterprise_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.banking.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleLogin(john, demo)">
+                  </a> <!-- verifyMultipleLogin(john, demo) -->
+                  <span class="method-name">verifyMultipleLogin</span>
+                  <span class="parameters">(john,demo)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParaBank_Enterprise_Suite-class-passed -->
+        </div> <!-- panel ParaBank_Enterprise_Suite -->
+        <div panel-name="test-xml-ParaBank_Enterprise_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\91797\eclipse-workspace\AutomationFramework_V2\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite data-provider-thread-count=&quot;3&quot; name=&quot;ParaBank Enterprise Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.banking.utils.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Authentication Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.banking.tests.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Authentication Tests --&gt;
+&lt;/suite&gt; &lt;!-- ParaBank Enterprise Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-ParaBank_Enterprise_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for ParaBank Enterprise Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Authentication Tests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-ParaBank_Enterprise_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for ParaBank Enterprise Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-ParaBank_Enterprise_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for ParaBank Enterprise Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_ParaBank_Enterprise_Suite');
+function tableData_ParaBank_Enterprise_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyMultipleLogin')
+data.setCell(0, 2, 'com.banking.tests.LoginTest')
+data.setCell(0, 3, 7690);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyMultipleLogin')
+data.setCell(1, 2, 'com.banking.tests.LoginTest')
+data.setCell(1, 3, 7628);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyMultipleLogin')
+data.setCell(2, 2, 'com.banking.tests.LoginTest')
+data.setCell(2, 3, 7577);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyMultipleLogin')
+data.setCell(3, 2, 'com.banking.tests.LoginTest')
+data.setCell(3, 3, 7481);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyMultipleLogin')
+data.setCell(4, 2, 'com.banking.tests.LoginTest')
+data.setCell(4, 3, 7449);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyMultipleLogin')
+data.setCell(5, 2, 'com.banking.tests.LoginTest')
+data.setCell(5, 3, 7416);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyMultipleLogin')
+data.setCell(6, 2, 'com.banking.tests.LoginTest')
+data.setCell(6, 3, 7395);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyMultipleLogin')
+data.setCell(7, 2, 'com.banking.tests.LoginTest')
+data.setCell(7, 3, 7394);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyMultipleLogin')
+data.setCell(8, 2, 'com.banking.tests.LoginTest')
+data.setCell(8, 3, 7372);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyMultipleLogin')
+data.setCell(9, 2, 'com.banking.tests.LoginTest')
+data.setCell(9, 3, 7292);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyMultipleLogin')
+data.setCell(10, 2, 'com.banking.tests.LoginTest')
+data.setCell(10, 3, 6900);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyMultipleLogin')
+data.setCell(11, 2, 'com.banking.tests.LoginTest')
+data.setCell(11, 3, 6850);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyMultipleLogin')
+data.setCell(12, 2, 'com.banking.tests.LoginTest')
+data.setCell(12, 3, 6666);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyMultipleLogin')
+data.setCell(13, 2, 'com.banking.tests.LoginTest')
+data.setCell(13, 3, 6585);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyMultipleLogin')
+data.setCell(14, 2, 'com.banking.tests.LoginTest')
+data.setCell(14, 3, 1743);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyMultipleLogin')
+data.setCell(15, 2, 'com.banking.tests.LoginTest')
+data.setCell(15, 3, 6);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyMultipleLogin')
+data.setCell(16, 2, 'com.banking.tests.LoginTest')
+data.setCell(16, 3, 3);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyMultipleLogin')
+data.setCell(17, 2, 'com.banking.tests.LoginTest')
+data.setCell(17, 3, 2);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyMultipleLogin')
+data.setCell(18, 2, 'com.banking.tests.LoginTest')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyMultipleLogin')
+data.setCell(19, 2, 'com.banking.tests.LoginTest')
+data.setCell(19, 3, 0);
+window.suiteTableData['ParaBank_Enterprise_Suite']= { tableData: data, tableDiv: 'times-div-ParaBank_Enterprise_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-ParaBank_Enterprise_Suite">
+              </div> <!-- times-div-ParaBank_Enterprise_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-ParaBank_Enterprise_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for ParaBank Enterprise Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-ParaBank_Enterprise_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.banking.tests.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyBrowserLaunch</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-ParaBank_Enterprise_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.banking.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMultipleLogin(john, demo)</span>
+                <span class="method-start">10343 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMultipleLogin(admin, admin123)</span>
+                <span class="method-start">10727 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMultipleLogin(alice, password)</span>
+                <span class="method-start">11358 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">12111 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">12500 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMultipleLogin(rohit, qa_test_pass)</span>
+                <span class="method-start">15766 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">18638 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">19021 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">19298 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">19690 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMultipleLogin(tcs_ghost_001, fakePass!)</span>
+                <span class="method-start">22053 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMultipleLogin(invalid_user_99, wrong_pass)</span>
+                <span class="method-start">22906 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22968 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">23414 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMultipleLogin(JOHN, demo)</span>
+                <span class="method-start">26978 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">29649 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">29953 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">30868 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">31476 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMultipleLogin(john, DEMO)</span>
+                <span class="method-start">32928 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMultipleLogin(!@#$%^&*(), special_pass)</span>
+                <span class="method-start">34503 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">34642 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">35091 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMultipleLogin(user_name_with_spaces, pass word)</span>
+                <span class="method-start">38926 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">40695 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">41103 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">41420 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">41766 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMultipleLogin(very_long_username_test_exceeding_standard_limits_999, short)</span>
+                <span class="method-start">44255 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMultipleLogin(short, very_long_password_test_exceeding_standard_limits_999)</span>
+                <span class="method-start">45079 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">46646 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">47066 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMultipleLogin( OR '1'='1, anything)</span>
+                <span class="method-start">50151 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">52009 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">52402 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">52722 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">53247 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMultipleLogin(admin' --, anything)</span>
+                <span class="method-start">55559 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMultipleLogin(<script>alert('xss')</script>, pass)</span>
+                <span class="method-start">56639 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">56989 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">57559 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMultipleLogin(null, null)</span>
+                <span class="method-start">60608 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">61362 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">61746 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">63351 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">63715 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">64144 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">64296 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMultipleLogin(null, null)</span>
+                <span class="method-start">64888 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">65270 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">66752 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMultipleLogin(null, null)</span>
+                <span class="method-start">67512 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMultipleLogin(null, null)</span>
+                <span class="method-start">67512 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">68031 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">68111 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMultipleLogin(null, null)</span>
+                <span class="method-start">69905 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">70297 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

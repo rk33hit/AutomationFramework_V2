@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="3" name="Failed suite [ParaBank Enterprise Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.banking.utils.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Authentication Tests(failed)">
+    <classes>
+      <class name="com.banking.tests.LoginTest">
+        <methods>
+          <include name="verifyMultipleLogin" invocation-numbers="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.banking.tests.LoginTest -->
+    </classes>
+  </test> <!-- Authentication Tests(failed) -->
+</suite> <!-- Failed suite [ParaBank Enterprise Suite] -->
