@@ -9,143 +9,29 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">ParaBank Enterprise Suite</th></tr>
-<tr><td><a href="#t0">Authentication Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">19</td><td class="num">71,534</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Authentication Tests</a></td><td class="num">20</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">90,602</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ParaBank Enterprise Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Authentication Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="19">com.banking.tests.LoginTest</td><td><a href="#m0">verifyMultipleLogin</a></td><td rowspan="19">1776516408166</td><td rowspan="19">6850</td></tr><tr class="failedeven"><td><a href="#m1">verifyMultipleLogin</a></td></tr><tr class="failedeven"><td><a href="#m2">verifyMultipleLogin</a></td></tr><tr class="failedeven"><td><a href="#m3">verifyMultipleLogin</a></td></tr><tr class="failedeven"><td><a href="#m4">verifyMultipleLogin</a></td></tr><tr class="failedeven"><td><a href="#m5">verifyMultipleLogin</a></td></tr><tr class="failedeven"><td><a href="#m6">verifyMultipleLogin</a></td></tr><tr class="failedeven"><td><a href="#m7">verifyMultipleLogin</a></td></tr><tr class="failedeven"><td><a href="#m8">verifyMultipleLogin</a></td></tr><tr class="failedeven"><td><a href="#m9">verifyMultipleLogin</a></td></tr><tr class="failedeven"><td><a href="#m10">verifyMultipleLogin</a></td></tr><tr class="failedeven"><td><a href="#m11">verifyMultipleLogin</a></td></tr><tr class="failedeven"><td><a href="#m12">verifyMultipleLogin</a></td></tr><tr class="failedeven"><td><a href="#m13">verifyMultipleLogin</a></td></tr><tr class="failedeven"><td><a href="#m14">verifyMultipleLogin</a></td></tr><tr class="failedeven"><td><a href="#m15">verifyMultipleLogin</a></td></tr><tr class="failedeven"><td><a href="#m16">verifyMultipleLogin</a></td></tr><tr class="failedeven"><td><a href="#m17">verifyMultipleLogin</a></td></tr><tr class="failedeven"><td><a href="#m18">verifyMultipleLogin</a></td></tr><tr><th colspan="4">Authentication Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.banking.tests.LoginTest</td><td><a href="#m19">verifyMultipleLogin</a></td><td rowspan="1">1776516361870</td><td rowspan="1">1743</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ParaBank Enterprise Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Authentication Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="20">com.banking.tests.LoginTest</td><td><a href="#m0">verifyMultipleLogin</a></td><td rowspan="20">1776589013664</td><td rowspan="20">7055</td></tr><tr class="passedeven"><td><a href="#m1">verifyMultipleLogin</a></td></tr><tr class="passedeven"><td><a href="#m2">verifyMultipleLogin</a></td></tr><tr class="passedeven"><td><a href="#m3">verifyMultipleLogin</a></td></tr><tr class="passedeven"><td><a href="#m4">verifyMultipleLogin</a></td></tr><tr class="passedeven"><td><a href="#m5">verifyMultipleLogin</a></td></tr><tr class="passedeven"><td><a href="#m6">verifyMultipleLogin</a></td></tr><tr class="passedeven"><td><a href="#m7">verifyMultipleLogin</a></td></tr><tr class="passedeven"><td><a href="#m8">verifyMultipleLogin</a></td></tr><tr class="passedeven"><td><a href="#m9">verifyMultipleLogin</a></td></tr><tr class="passedeven"><td><a href="#m10">verifyMultipleLogin</a></td></tr><tr class="passedeven"><td><a href="#m11">verifyMultipleLogin</a></td></tr><tr class="passedeven"><td><a href="#m12">verifyMultipleLogin</a></td></tr><tr class="passedeven"><td><a href="#m13">verifyMultipleLogin</a></td></tr><tr class="passedeven"><td><a href="#m14">verifyMultipleLogin</a></td></tr><tr class="passedeven"><td><a href="#m15">verifyMultipleLogin</a></td></tr><tr class="passedeven"><td><a href="#m16">verifyMultipleLogin</a></td></tr><tr class="passedeven"><td><a href="#m17">verifyMultipleLogin</a></td></tr><tr class="passedeven"><td><a href="#m18">verifyMultipleLogin</a></td></tr><tr class="passedeven"><td><a href="#m19">verifyMultipleLogin</a></td></tr></tbody>
 </table>
-<h2>Authentication Tests</h2><h3 id="m0">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&lt;script&gt;alert(&apos;xss&apos;)&lt;/script&gt;</td><td>pass</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed for user: &lt;script&gt;alert(&apos;xss&apos;)&lt;/script&gt; expected [true] but found [false]
-	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>null</td><td>null</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because &quot;parameters[0]&quot; is null
-	at com.banking.utils.TestListener.onTestStart(TestListener.java:36)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 5 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>john</td><td>DEMO</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed for user: john expected [true] but found [false]
-	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>very_long_username_test_exceeding_standard_limits_999</td><td>short</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed for user: very_long_username_test_exceeding_standard_limits_999 expected [true] but found [false]
-	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>user_name_with_spaces</td><td>pass word</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed for user: user_name_with_spaces expected [true] but found [false]
-	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>short</td><td>very_long_password_test_exceeding_standard_limits_999</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed for user: short expected [true] but found [false]
-	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>rohit</td><td>qa_test_pass</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed for user: rohit expected [true] but found [false]
-	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin</td><td>admin123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed for user: admin expected [true] but found [false]
-	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>!@#$%^&amp;*()</td><td>special_pass</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed for user: !@#$%^&amp;*() expected [true] but found [false]
-	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td> OR &apos;1&apos;=&apos;1</td><td>anything</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed for user:  OR &apos;1&apos;=&apos;1 expected [true] but found [false]
-	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>alice</td><td>password</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed for user: alice expected [true] but found [false]
-	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>null</td><td>null</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because &quot;parameters[0]&quot; is null
-	at com.banking.utils.TestListener.onTestStart(TestListener.java:36)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 5 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>JOHN</td><td>demo</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed for user: JOHN expected [true] but found [false]
-	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>null</td><td>null</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because &quot;parameters[0]&quot; is null
-	at com.banking.utils.TestListener.onTestStart(TestListener.java:36)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 5 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m14">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>null</td><td>null</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because &quot;parameters[0]&quot; is null
-	at com.banking.utils.TestListener.onTestStart(TestListener.java:36)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 5 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m15">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>null</td><td>null</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because &quot;parameters[0]&quot; is null
-	at com.banking.utils.TestListener.onTestStart(TestListener.java:36)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 5 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m16">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin&apos; --</td><td>anything</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed for user: admin&apos; -- expected [true] but found [false]
-	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m17">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>tcs_ghost_001</td><td>fakePass!</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed for user: tcs_ghost_001 expected [true] but found [false]
-	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m18">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>invalid_user_99</td><td>wrong_pass</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed for user: invalid_user_99 expected [true] but found [false]
-	at com.banking.tests.LoginTest.verifyMultipleLogin(LoginTest.java:46)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m19">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>john</td><td>demo</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Authentication Tests</h2><h3 id="m0">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>tcs_ghost_001</td><td>fakePass!</td><td>FALSE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>JOHN</td><td>demo</td><td>FALSE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>user_name_with_spaces</td><td>pass word</td><td>FALSE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>rohit</td><td>qa_test_pass</td><td>FALSE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>tcs_qa_03</td><td>pass_03</td><td>FALSE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>very_long_username...</td><td>short</td><td>FALSE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>null</td><td>null</td><td>FALSE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>tcs_qa_02</td><td>pass_02</td><td>FALSE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>invalid_user_99</td><td>wrong_pass</td><td>FALSE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>john</td><td>DEMO</td><td>FALSE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>1234567890</td><td>987654321</td><td>FALSE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>admin</td><td>admin123</td><td>FALSE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>john</td><td>demo</td><td>TRUE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>admin&apos; --</td><td>anything</td><td>FALSE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>tcs_qa_01</td><td>pass_01</td><td>FALSE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>!@#$%^&amp;*()</td><td>special_pass</td><td>FALSE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>OR &apos;1&apos;=&apos;1</td><td>anything</td><td>FALSE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>alice</td><td>password</td><td>FALSE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>short</td><td>very_long...</td><td>FALSE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">com.banking.tests.LoginTest#verifyMultipleLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>script alert xss</td><td>pass</td><td>FALSE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

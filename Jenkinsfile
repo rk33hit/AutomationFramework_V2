@@ -10,28 +10,28 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                echo 'Stage 1: Pulling latest code from GitHub...'
+                echo "Stage 1: Pulling latest code from GitHub..."
                 checkout scm
             }
         }
 
         stage('Build') {
             steps {
-                echo 'Stage 2: Compiling the project...'
+                echo "Stage 2: Compiling the project..."
                 bat 'mvn clean compile'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Stage 3: Running Selenium TestNG tests...'
+                echo "Stage 3: Running Selenium TestNG tests..."
                 bat 'mvn test'
             }
         }
 
         stage('Report') {
             steps {
-                echo 'Stage 4: Publishing test results...'
+                echo "Stage 4: Publishing test results..."
                 junit testResults: 'target/surefire-reports/*.xml',
                       allowEmptyResults: true
                 archiveArtifacts artifacts: 'test-output/**/*',
@@ -41,7 +41,7 @@ pipeline {
 
         stage('Archive') {
             steps {
-                echo 'Stage 5: Archiving build artifacts...'
+                echo "Stage 5: Archiving build artifacts..."
                 archiveArtifacts artifacts: 'target/*.jar',
                                  allowEmptyArchive: true
             }
@@ -50,15 +50,16 @@ pipeline {
 
     post {
         success {
-            echo '=============================================)'
-            echo 'ALL TESTS PASSED - Build Successful!'
-            echo '============================================='
+            echo "ALL TESTS PASSED - Build Successful!"
         }
         unstable {
-            echo '============================================='
-            echo 'SOME TESTS FAILED - Build Unstable!'
-            echo '============================================='
+            echo "SOME TESTS FAILED - Build Unstable!"
         }
         failure {
-            echo '============================================='
-            echo 'BUILD
+            echo "BUILD FAILED - Check logs immediately!"
+        }
+        always {
+            echo "Pipeline finished. Stages: Checkout -> Build -> Test -> Report -> Archive"
+        }
+    }
+}
