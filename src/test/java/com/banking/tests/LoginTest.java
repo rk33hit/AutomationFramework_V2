@@ -18,34 +18,43 @@ public class LoginTest extends BaseClass {
         String currentTitle = getDriver().getTitle();
         System.out.println("The browser successfully launched and the title is: " + currentTitle);
     }
-       @Test(dataProvider="loginCredentials", dataProviderClass=com.banking.utils.DataProviders.class)
-       public void verifyMultipleLogin(String username, String password) {
-           // 1. Create an instance of the LoginPage
-           LoginPage loginPage = new LoginPage(getDriver());
-		// 2. Use the login method to perform the login action
-           System.out.println("Attempting to log in with user: " + username);
-		loginPage.loginToParaBank(username,password);
-		
-		// --- THE ARCHITECT UPGRADE: Explicit Wait ---
-        boolean isRedirected = false;
+    @Test(dataProvider="loginCredentials", dataProviderClass=com.banking.utils.DataProviders.class)
+    public void verifyMultipleLogin(String username, String password, String expectedResult) {
         
-		try {
-						// Wait for the title to contain "overview.htm" which indicates a successful login
-			WebDriverWait wait=new WebDriverWait(getDriver(),Duration.ofSeconds(6));
-			isRedirected = wait.until(ExpectedConditions.urlContains("overview.htm"));
-		} catch (Exception e) {
-			
-			System.out.println("TIMEOUT: Waited 6 seconds, but URL never changed to overview.htm");//if 6 seconds pass and we are not redirected to the overview page, we will catch the exception and print a message
-			isRedirected=false;
-		}
-		// --- ADD THIS DEBUG LINE ---
-        System.out.println("DEBUG: The current browser URL is: " + getDriver().getCurrentUrl());
-		   
-	
-		//judge now the result of the login attempt based on whether we were redirected to the overview page or not
-		Assert.assertTrue(isRedirected, "Login failed for user: " + username);
-		System.out.println("Login workflow executed for user: " + username);
-		
-	   }
+        // 1. Create an instance of the LoginPage
+        LoginPage loginPage = new LoginPage(getDriver());
+        
+        // 2. Skip test if data is null or empty
+        if (username == null || username.isEmpty() || username.equals("null")) {
+            System.out.println("Skipping empty row");
+            return;
+        }
+        
+        // 3. Perform login
+        System.out.println("Attempting to log in with user: " + username);
+        loginPage.loginToParaBank(username, password);
+
+        // 4. Wait for redirect
+        boolean isRedirected = false;
+        try {
+            WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(6));
+            isRedirected = wait.until(ExpectedConditions.urlContains("overview.htm"));
+        } catch (Exception e) {
+            System.out.println("TIMEOUT: Waited 6 seconds, URL never changed");
+            isRedirected = false;
+        }
+
+        System.out.println("DEBUG: Current URL is: " + getDriver().getCurrentUrl());
+
+        // 5. Assert based on expected column from Excel
+        boolean shouldPass = expectedResult.equalsIgnoreCase("true");
+        if (shouldPass) {
+            Assert.assertTrue(isRedirected, "VALID user login failed: " + username);
+            System.out.println("PASS: Login successful for valid user: " + username);
+        } else {
+            Assert.assertFalse(isRedirected, "INVALID user login should have failed: " + username);
+            System.out.println("PASS: Login correctly rejected for invalid user: " + username);
+        }
+    }
 	  
 }
