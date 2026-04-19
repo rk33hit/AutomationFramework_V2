@@ -32,30 +32,33 @@ pipeline {
         stage('Report') {
             steps {
                 echo 'Stage 4: Publishing test results...'
-                publishHTML([
-                    allowMissing: false,
-                    alwaysLinkToLastBuild: true,
-                    keepAll: true,
-                    reportDir: 'test-output',
-                    reportFiles: 'index.html',
-                    reportName: 'ExtentReport'
-                ])
+                junit testResults: 'target/surefire-reports/*.xml',
+                      allowEmptyResults: true
+                archiveArtifacts artifacts: 'test-output/**/*',
+                                 allowEmptyArchive: true
+            }
+        }
+
+        stage('Archive') {
+            steps {
+                echo 'Stage 5: Archiving build artifacts...'
+                archiveArtifacts artifacts: 'target/*.jar',
+                                 allowEmptyArchive: true
             }
         }
     }
 
     post {
         success {
+            echo '=============================================)'
             echo 'ALL TESTS PASSED - Build Successful!'
+            echo '============================================='
         }
         unstable {
+            echo '============================================='
             echo 'SOME TESTS FAILED - Build Unstable!'
+            echo '============================================='
         }
         failure {
-            echo 'BUILD FAILED - Check logs!'
-        }
-        always {
-            echo 'Pipeline finished. Cleaning workspace...'
-        }
-    }
-}
+            echo '============================================='
+            echo 'BUILD
