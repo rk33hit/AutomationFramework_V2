@@ -1,6 +1,8 @@
 package com.banking.utils;
 
 import java.io.FileInputStream;
+
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -41,7 +43,8 @@ public class ExcelReader {
             for (int i = 1; i < rowCount; i++) { // Start at i=1 to skip headers
                 for (int j = 0; j < colCount; j++) {
                     // Extract text from cell and put it in the array
-                    data[i - 1][j] = sheet.getRow(i).getCell(j).getStringCellValue();
+                	DataFormatter formatter = new DataFormatter();
+                	data[i - 1][j] = formatter.formatCellValue(sheet.getRow(i).getCell(j));
                 }
             }
             workbook.close();
