@@ -63,7 +63,17 @@ GitHub webhook triggers Jenkins automatically on every push.
 ## How to Run via Jenkins
 1. Open Jenkins at http://localhost:8080
 2. Go to AutomationFramework-Pipeline
-3. Click Build Now
+3. Click Build Now## API Automation — REST Assured
+
+Built REST Assured framework covering complete booking lifecycle:
+- GET — fetch and validate existing resources
+- POST — create new resources using POJO request bodies  
+- PUT — authenticated full update using token
+- DELETE — authenticated deletion with post-deletion verification
+- E2E — complete Create → Verify → Update → Verify → Delete → Confirm lifecycle
+- AuthUtil — token generated once and reused across all authenticated tests
+
+All API tests integrated with existing TestNG suite and Jenkins CI/CD pipeline.
    OR just push any code change to GitHub
    — webhook will auto trigger the build
 
