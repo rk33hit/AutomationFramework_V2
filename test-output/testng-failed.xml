@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.banking.api.tests.EndToEndBookingTest">
+      <class name="com.banking.api.tests.DataDrivenBookingTest">
         <methods>
-          <include name="verifyCompleteBookingLifecycle"/>
+          <include name="verifyCreateBookingDataDriven" invocation-numbers="3"/>
           <include name="setupApi"/>
         </methods>
-      </class> <!-- com.banking.api.tests.EndToEndBookingTest -->
+      </class> <!-- com.banking.api.tests.DataDrivenBookingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
