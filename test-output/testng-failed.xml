@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite data-provider-thread-count="3" name="Failed suite [ParaBank Enterprise Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.banking.utils.TestListener"/>
-  </listeners>
-  <test thread-count="5" name="Authentication Tests(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.banking.tests.LoginTest">
+      <class name="com.banking.api.tests.EndToEndBookingTest">
         <methods>
-          <include name="verifyMultipleLogin" invocation-numbers="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="verifyCompleteBookingLifecycle"/>
+          <include name="setupApi"/>
         </methods>
-      </class> <!-- com.banking.tests.LoginTest -->
+      </class> <!-- com.banking.api.tests.EndToEndBookingTest -->
     </classes>
-  </test> <!-- Authentication Tests(failed) -->
-</suite> <!-- Failed suite [ParaBank Enterprise Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
